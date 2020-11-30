@@ -1,5 +1,8 @@
 name: 'Merge Advisory'
 description: "Post comments on all open PR's for a project advising that there has been a merge"
+branding:
+  icon: git-merge
+  color: red
 inputs:
   trunk-ref:
     description: "git-ref of the branch that received new commits"
