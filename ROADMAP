@@ -1,0 +1,5 @@
+- automatically parse trunk & merged-branch refs
+- add option to only comment on PRs that are targeting trunk as the base for the PR
+- allow for custom-messaging
+- handle force-pushing intelligently
+- handle out-of-process push's, vs. pushes associated with a PR
