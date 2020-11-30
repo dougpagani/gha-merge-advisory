@@ -1,0 +1,20 @@
+{
+  "name": "gha-merge-advisory",
+  "version": "0.1.0",
+  "description": "Post comments on all open PR's for a project advising that there has been a merge",
+  "main": "index.js",
+  "scripts": {
+    "test": "TODO"
+    "trigger-test": "TODO # run a merge into master, and print the workflow-run-url to be viewed"
+  },
+  "author": "Doug Pagani",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dougpagani/gha-merge-advisory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dougpagani/gha-merge-advisory/issues"
+  },
+  "homepage": "https://github.com/dougpagani/gha-merge-advisory#readme"
+}
