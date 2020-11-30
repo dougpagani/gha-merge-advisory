@@ -1,0 +1,41 @@
+name: "Test This Action (on-push)"
+on: push
+
+jobs:
+  test-run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      # SETUP
+      # Arguably these should be created out-of-band, or before this workflow.
+      # But there *shouldn't* be any weird race condition
+      - name: open pr 1
+        id: pr1
+        run: |
+          echo TODO
+          # gh open-pr ???
+      - name: open pr 2
+        id: pr2
+        run: | 
+          echo TODO
+          # gh open-pr ???
+          set-output:: pr1
+      # END: SETUP
+
+      - name: merge advisories
+        uses: ./
+        with: 
+          ????
+
+      # ASSERT
+      - name: check prs for comments
+        run: |
+          bash test/workflow-assertions/01-check-that-a-pr-has-a-certain-comment.sh
+      # CLEANUP
+      - name: close PR's
+        run: |
+          echo TODO
+          # gh close-pr1 ${{ steps.pr1.outputs.id }}
+          # gh close-pr2 ${{ steps.pr2.outputs.id }}
+
